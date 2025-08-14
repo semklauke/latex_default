@@ -1,0 +1,10 @@
+*~
+.*.swp
+.DS_Store
+.texpadtmp
+.texpadtmp/
+*.log
+*.out
+*.aux
+local_test
+example/example.pdf
