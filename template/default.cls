@@ -5,7 +5,7 @@
 %%%
 % Define the Class
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{../template/default}
+\ProvidesClass{template/default}
 %% --------------------------------------------------- %%
 %% --------------- Define Class options -------------- %%
 %% --------------------------------------------------- %%
@@ -103,7 +103,6 @@
 %% --------------------------------------------------- %%
 %% --------------------- Styling --------------------- %%
 %% --------------------------------------------------- %%
-\setlength{\parindent}{\settingParidnent}
 \renewcommand{\labelenumi}{(\alph{enumi})}
 \pagestyle{plain}
 \clearpairofpagestyles{}
@@ -129,6 +128,7 @@
         pdfauthor = {},
         pdfsubject = {}
     }%
+    \setlength{\parindent}{\settingParidnent}%
 }
 %%%%% Later load packages so \PassOptionToPackage{} can reach them
 \RequirePackage{babel}
@@ -137,4 +137,4 @@
 %% --------------------------------------------------- %%
 %% --------------- Custome Definitions --------------- %%
 %% --------------------------------------------------- %%
-\IfFileExists{../template/custome_definitions.tex}{\input{../template/custome_definitions}}{}
+\IfFileExists{template/custome_definitions.tex}{\input{template/custome_definitions}}{}
